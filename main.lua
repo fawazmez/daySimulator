@@ -24,12 +24,11 @@ calculateButton.id = "calculate button"
 
     weekend = weekendTextField.text
     
-    if weekendTextField == "saturday" then 
-    	display.newText( "it a weekend your smart here a cookie", display.contentCenterX, display.contentCenterY + 200, native.systemFont, 100 )
-    elseif weekendTextField == "sunday" then 
+    if weekendTextField == "sunday" or "saturday" then 
     	display.newText( "it a weekend your smart here a cookie", display.contentCenterX, display.contentCenterY + 200, native.systemFont, 100 )	
-    else 
-    	display.newText( "it weekday have fun at work nerd", display.contentCenterX, display.contentCenterY + 200, native.systemFont, 100 )
+    else
+    	display.newText( "it weekday have fun at work nerd", display.contentCenterX, display.contentCenterY + 200, native.systemFont, 100 ) 
+    	
      end
 end
 
